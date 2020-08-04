@@ -1,0 +1,16 @@
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.table {
+    margin-top: 48px;
+}
+
+.table tr {
+    text-align: center;
+}
+
+.top-brief {
+    margin-top: 48px;
+}

@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navbar as TopNavigationBar } from 'components/navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './Navigation';
+import { Provider } from "react-redux";
+
+import { RateObserver } from 'components/rateObserver'
+import './App.css'
+
+import { configureStore } from './state/configureStore';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Provider store={configureStore()}>
+          <Router>
+              <RateObserver />
+              <TopNavigationBar />
+              <Routes/>
+          </Router>
+      </Provider>
   );
 }
 

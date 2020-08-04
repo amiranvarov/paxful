@@ -1,0 +1,48 @@
+.left-column {
+    padding-left: 2em;
+}
+
+.message-indicator {
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3em;
+    left: 1.3em;
+}
+.message-indicator.green {
+    background-color: limegreen;
+}
+
+.username {
+    font-size: 0.8em;
+    color: #777;
+    font-weight: 600;
+}
+.payment-status {
+    font-size: 0.7em;
+    color: #777;
+}
+
+.payment-status.payed {
+    color: green;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 0.8em;
+    color: #999;
+    font-weight: 500;
+}
+
+img.avatar {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.payment-type {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 600;
+}

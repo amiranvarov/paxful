@@ -1,0 +1,6 @@
+.messages-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 0px;
+
+}
